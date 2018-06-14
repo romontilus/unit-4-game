@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Casino| Card Counter </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+
+</head>
+<body>
+
+ <audio id="shuffle" src="assets/media/cardflip.mp3"></audio>
+ <audio id="bgaudio" src="assets/media/bgmusic.mp3"></audio>
+ <audio id="clap" src="assets/media/clapping.mp3"></audio>
+ <audio id="aww" src="assets/media/aww.mp3"></audio>
+
+<div class="background">
+
+        <div id = "titlebox" class="container">
+               <img src="assets/images/casinologo.png" class="casino" alt="logo"></img>
+            </div>
+
+<section class="roster">
+    <div id="card1">
+            <img id="spadebutton" src="assets/images/spades.png">    
+    </div>
+
+    <div id="card2">
+            <img id="diamondbutton" img src="assets/images/diamonds.png">    
+    </div>
+
+    <div id="card3">
+            <img id="clubbutton" img src="assets/images/clubs.png">    
+    </div>
+
+    <div id="card4">
+            <img id="heartbutton" img src="assets/images/hearts.png">    
+    </div>
+
+</section>
+
+<section class="gameBox">
+    <div id="dealerBox">
+        <div id="playerScore">
+        <h1><span id="counter">0</span></h1>
+        </div>
+
+        <div id="dealerNumber">
+                <h1><span id="dealer">$</span></h1>
+            </div>
+    </div>
+</section>
+
+<section id = "tally">
+        <div id="wincount">
+                <h2>Wins: <span id="wintotal"></span></h2>
+            </div>
+
+            <div id="losscount">
+                    <h3>Losses:<span id="losstotal"></span></h3>
+                </div>               
+</section>
+<footer>
+        <div class="container">
+          Copyright &copy; 
+        </div>
+      </footer>
+</div>
+
+</body>
+</html>
